@@ -43,7 +43,6 @@ const ticketSchema = new mongoose.Schema(
         ret.id = ret._id;
         delete ret._id;
       },
-      versionKey: false,
     },
   }
 );
