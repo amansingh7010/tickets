@@ -8,6 +8,8 @@ declare global {
 
 let mongo: any;
 
+jest.mock('../nats-wrapper');
+
 beforeAll(async () => {
   process.env.JWT_KEY = 'somejwtsecret';
   mongo = await MongoMemoryServer.create();
